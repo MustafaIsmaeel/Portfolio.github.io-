@@ -1,10 +1,31 @@
-:root{--bg:#70c5ce;--fg:#fff;--panel:#ffffffcc}
-*{box-sizing:border-box}
-body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,var(--bg),#49b6c0); color:#073642; display:flex; align-items:center; justify-content:center; min-height:100vh}
-#container{width:520px; max-width:95%; text-align:center}
-h1{margin:0 0 .3rem}
-canvas{display:block; margin:12px auto; background:#70d7e0; border-radius:8px; box-shadow:0 10px 30px rgba(10,10,10,0.12)}
-.info{margin:0 0 8px}
-.controls{display:flex; gap:12px; align-items:center; justify-content:center; margin-bottom:8px}
-button{padding:8px 12px; border-radius:8px; border:none; cursor:pointer; background:#fff; box-shadow:0 4px 12px rgba(0,0,0,0.06)}
-.footer{font-size:.85rem; color:#01303a}
+<style>
+:root{
+--bg:#0d1b2a;
+--card:#1b263b;
+--accent:#4dd0e1;
+--text:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial}
+body{background:var(--bg);color:var(--text);overflow-x:hidden}
+
+
+/* Navbar */
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px;background:#091520;position:sticky;top:0;z-index:999}
+nav ul{list-style:none;display:flex;gap:20px}
+nav a{text-decoration:none;color:var(--text);font-weight:500}
+.logo{color:var(--accent)}
+
+
+/* Hero */
+#hero{text-align:center;padding:140px 20px;background:#112233}
+#hero h1{font-size:3rem;margin-bottom:10px}
+.accent{color:var(--accent)}
+#hero button{padding:12px 28px;font-size:1rem;border:none;border-radius:8px;background:var(--accent);color:#000;margin-top:20px;cursor:pointer}
+
+
+/* Game section */
+.game-section{text-align:center;padding:80px 20px}
+canvas{background:#87ceeb;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,0.4);margin-top:20px}
+.controls{margin:20px auto;display:flex;justify-content:center;gap:20px}
+.controls button{padding:10px 20px;border:none;border-radius:6px;cursor:pointer;background:var(--accent)}
+.score{margin-top:10px;font-size:1.2rem}
